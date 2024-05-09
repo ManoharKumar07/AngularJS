@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mathApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Math Operations</title>
+    <script src="angular.js"></script>
+</head>
+
+<body>
+    <div ng-controller="MathController">
+        <h2>Factorial and Square Calculator</h2>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" ng-model="inputNumber" placeholder="Enter a number">
+        <button ng-click="calculateFactorial()">Calculate Factorial</button>
+        <p ng-if="factorial !== undefined">Factorial: {{ factorial }}</p>
+        <button ng-click="calculateSquare()">Calculate Square</button>
+        <p ng-if="square !== undefined">Square: {{ square }}</p>
+    </div>
+    <script src="./FactorialSquare.js"></script>
+</body>
+
+</html>
